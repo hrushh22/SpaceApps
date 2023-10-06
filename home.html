@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>SciNexus | Home</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="search-wrapper">
+      <input type="search" id="search" placeholder="search projects" data-search></input>
+    </div>
+    <div class="cards" data-cards-container>
+
+    </div>
+
+    <template data-user-template>
+      <div class="card">
+        <div class="header" data-header></div>
+        <div class="description" data-description></div>
+        <div class="skills" data-skills></div>
+
+        <div class="flexcon">
+        <div class="status" data-status></div>
+        <div class="level" data-level></div>
+      </div>
+
+      <div class="btn-cnt">
+      <div class="apply-btn">
+        <a>
+        <div>Contribute</div>
+          <svg class="arrow" viewBox="0 0 24 24">
+            <path vector-effect="non-scaling-stroke" d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z"></path>
+        </svg>
+      </a>
+      </div>
+      </div>
+    </div>
+    </template>
+
+    <script src="home.js"></script>
+  </body>
+  
+</html>

@@ -1,0 +1,109 @@
+body {
+	background: linear-gradient(-45deg,
+	 #7649fe, #0c164f, #1d1135);
+	animation: gradient 15s ease infinite;
+    background-size: 300% 400%;
+	height: 100vh;
+}
+:root{
+    --color-text:#fcfbfe;
+    font-size: 16px;
+    font-style: none;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+    75% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.intro {
+	height: 100vh;
+	display: flex;
+    flex-direction: column;
+	text-align: left;
+    color: var(--color-text);
+    font-family: Whyte Inktrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.intro-text{
+    font-size: clamp(2rem,8vw,6rem);
+    justify-content: center;
+    margin: 0%;
+    line-height: 1;
+}
+.intro-sub{
+    font-size: clamp(1rem,6vw,2.75rem);
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+.intro-sub-sub{
+    font-size: clamp(1rem,6vw,1.5rem);
+    line-height: 1.1;
+    margin-left: 0rem;
+    margin-top: 0.5rem;
+    padding: 0;
+    background: linear-gradient( to right, #f25792, #ff9853,#9b80e6, #78adfc); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+
+@font-face {
+	font-family: Whyte Inktrap;
+	src: url(WhyteInktrap-Book.ttf);
+}
+
+.discover{
+    background-color: rgba(255, 255, 255, 0.8);
+    line-height: 1.1;
+    color: #0c164f;
+    box-sizing: border-box;
+    width: fit-content;
+    display: flex;
+    border-radius: 1rem;
+    padding:1.2rem 2rem 1rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    justify-content: center;
+    z-index: 100;
+    transition: 400ms ease;
+    text-decoration: none;
+}
+.arrows{
+    color:#0c164f;
+    fill:#0c164f;
+    width:2rem;
+    height: 1.1rem;
+    z-index: 100;
+}
+
+.discoverContainer:hover > .discover{
+    color:var(--color-text);
+    background-color: #9b80e6;
+    border: 2px #ffffff solid;
+    transition: 400ms ease;
+    z-index: 100;
+}
+
+.discoverContainer:hover >.discover >.arrows{
+    fill:#ffffff;
+    color:#ffffff;
+    z-index: 100;
+}

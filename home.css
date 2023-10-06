@@ -17,7 +17,6 @@ input{
     height: 3rem;
     padding: 1rem;
     border: #b0cef7 0.1rem solid;
-    min-width: 100vw;
 }
 .cards{
     display: grid;
@@ -101,6 +100,7 @@ background-color: green;
     display: flex;
     gap:1rem;
     place-items: center;
+    margin-top: 0.5rem;
 }
 .apply-btn {
     border-style: solid;
@@ -137,3 +137,15 @@ background-color: green;
     scale:1.005;
 }
 
+@media (max-width: 589px) {
+    .search-wrapper{
+        align-items: center;
+    }
+    input[type="search"] {
+      font-size: 12px;
+      padding:2px 4px;
+      width: 100%;
+      height: fit-content;
+      margin:0;
+    }
+  }

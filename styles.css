@@ -69,7 +69,9 @@ body {
 	font-family: Whyte Inktrap;
 	src: url(WhyteInktrap-Book.ttf);
 }
-
+.discoverContainer{
+    z-index: 999;
+}
 .discover{
     background-color: rgba(255, 255, 255, 0.8);
     line-height: 1.1;
@@ -94,16 +96,14 @@ body {
     z-index: 100;
 }
 
-.discoverContainer:hover > .discover{
+.discover:hover{
     color:var(--color-text);
-    background-color: #9b80e6;
-    border: 2px #ffffff solid;
-    transition: 400ms ease;
+    background-color: #885dff;
+    outline: 2px #ffffff solid;
+    transition: 0.3s ease all;
     z-index: 100;
 }
-
-.discoverContainer:hover >.discover >.arrows{
-    fill:#ffffff;
-    color:#ffffff;
-    z-index: 100;
+.discover:hover > .arrows{
+    fill: #ffffff;
+    transition: 0.3ss ease all;
 }

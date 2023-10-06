@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <title>SciNexus | Home</title>
@@ -11,13 +12,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+			</div>
+		</div>
+
+		<aside class="sidebar">
+			<h3></h3>
+			
+			<nav class="menu">
+				<a href="#" class="menu-item is-active">Home</a>
+				<a href="#" class="menu-item">About</a>
+				<a href="#" class="menu-item">Contact</a>
+			</nav>
+
+		</aside>
+
+<div class="main-content">
     <div class="search-wrapper">
       <input type="search" id="search" placeholder="search projects" data-search></input>
     </div>
     <div class="cards" data-cards-container>
 
     </div>
-
+  </div>
     <template data-user-template>
       <div class="card">
         <div class="header" data-header></div>
@@ -43,6 +62,15 @@
     </template>
 
     <script src="home.js"></script>
+    <script>
+      const menu_toggle = document.querySelector('.menu-toggle');
+      const sidebar = document.querySelector('.sidebar');
+  
+      menu_toggle.addEventListener('click', () => {
+        menu_toggle.classList.toggle('is-active');
+        sidebar.classList.toggle('is-active');
+      });
+    </script>
   </body>
   
 </html>

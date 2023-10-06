@@ -148,4 +148,10 @@ background-color: green;
       height: fit-content;
       margin:0;
     }
+
+    .card > .header{
+        font-size: 0.8rem;
+        font-weight: 550;
+        border-bottom: #cbd5e1 solid;
+    }
   }

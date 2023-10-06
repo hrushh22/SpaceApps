@@ -14,17 +14,13 @@ searchInput.addEventListener("input", e =>{
         (project.level && typeof project.level === 'string' && project.level.toLowerCase().includes(value.toLowerCase())) ||
         (project.status && typeof project.status === 'string' && project.status.toLowerCase().includes(value.toLowerCase()))
       );
-      
-          
-          
-          
 
         project.element.classList.toggle("hide", !isVisible)
     });
 })
 
 
-fetch("SpaceApps.Projects.json")
+fetch("spaceApps.json")
   .then((response) => response.json())
   .then((data) => {
     projects = data.map((project) => {

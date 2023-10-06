@@ -17,6 +17,7 @@ input{
     height: 3rem;
     padding: 1rem;
     border: #b0cef7 0.1rem solid;
+    min-width: 100vw;
 }
 .cards{
     display: grid;
@@ -135,3 +136,4 @@ background-color: green;
     transition: 0.3s ease all;
     scale:1.005;
 }
+

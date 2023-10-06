@@ -105,5 +105,5 @@ body {
 }
 .discover:hover > .arrows{
     fill: #ffffff;
-    transition: 0.3ss ease all;
+    transition: 0.3s ease all;
 }

@@ -7,13 +7,14 @@ let projects=[]
 searchInput.addEventListener("input", e =>{
     const value= e.target.value
     projects.forEach(project => {
-        const isVisible = (
-            (project.header && typeof project.header === 'string' && project.header.toLowerCase().indexOf(value) !== -1) ||
-            (project.description && typeof project.description === 'string' && project.description.toLowerCase().indexOf(value) !== -1) ||
-            (Array.isArray(project.skills) && project.skills.some((skill) => typeof skill === 'string' && skill.toLowerCase().indexOf(value) !== -1)) ||
-            (project.level && typeof project.level === 'string' && project.level.toLowerCase().indexOf(value) !== -1) ||
-            (project.status && typeof project.status === 'string' && project.status.toLowerCase().indexOf(value) !== -1)
-          );
+      const isVisible = (
+        (project.header && typeof project.header === 'string' && project.header.toLowerCase().includes(value.toLowerCase())) ||
+        (project.description && typeof project.description === 'string' && project.description.toLowerCase().includes(value.toLowerCase())) ||
+        (Array.isArray(project.skills) && project.skills.some((skill) => typeof skill === 'string' && skill.toLowerCase().includes(value.toLowerCase()))) ||
+        (project.level && typeof project.level === 'string' && project.level.toLowerCase().includes(value.toLowerCase())) ||
+        (project.status && typeof project.status === 'string' && project.status.toLowerCase().includes(value.toLowerCase()))
+      );
+      
           
           
           

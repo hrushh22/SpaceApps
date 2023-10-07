@@ -127,6 +127,8 @@ background-color: green;
 }
 .apply-btn a{
     display: flex;
+    text-decoration: none;
+    color: white;
 }
 .btn-cnt{
     display: flex;

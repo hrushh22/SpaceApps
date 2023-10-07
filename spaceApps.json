@@ -1,32 +1,6 @@
 [
 {
   "_id": {
-    "$oid": "651e4842726a71633c5e5d94"
-  },
-  "Project Id": 1,
-  "Project_Name": "NASA BPS Open Science Data Repository",
-  "Description": "The NASA Open Science Data Repository consists of two integrated biological databases—Ames Life Sciences Data Archive (ALSDA) and GeneLab—into one centralized data system. The Ames Life Sciences Data Archive (ALSDA) is the official repository of non-human science data spanning a broad range of biological levels involving data from tissues, organs, whole organisms, physiology, and behavior. GeneLab is an open science multi-omics repository hosting transcriptomics, metagenomics, epigenomics, proteomics, and metabolomics data. Studies comprise of data from model organisms including microbes, plants, fruit flies, rodents and humans. This database enables the accessibility, interoperability, and reusability of biological data from space-related experiments.",
-  "Skills": [
-    "Omics Data Analysis",
-    "Data Analysis",
-    "Bioinformatics",
-    "Experimental Design",
-    "Python",
-    "R Programming",
-    "Transcriptomics",
-    "Metagenomics",
-    "Epigenomics",
-    "Proteomics",
-    "Metabolomics"
-  ],
-  "Status": "Active",
-  "Level": [
-    "Intermediate",
-    "Advanced"
-  ]
-},
-{
-  "_id": {
     "$oid": "651e489f726a71633c5e5d95"
   },
   "Project_Id": 1,

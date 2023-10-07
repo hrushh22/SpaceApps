@@ -92,3 +92,51 @@
 	border-right: 5px solid #1d2a77;
     outline: solid 0.1rem #1d2a77;
 }
+
+.main-cont{
+	margin-left: 7rem;
+	border-radius: 1rem;
+}
+
+img{
+	max-width: 100%;
+	border-radius: 1rem;
+}
+.image-container{
+	display: flex;
+	flex-direction: column;
+	font-family: Poppins;
+}
+.picture{
+	width:40rem;
+	border-radius: 1rem;
+}
+
+@media (max-width: 1024px) {
+	.sidebar {
+		max-width: 200px;
+	}
+}
+
+@media (max-width: 768px) {
+	.menu-toggle {
+		display: block;
+        z-index: 100;
+	}
+	.content {
+		padding-top: 8rem;
+	}
+	.sidebar {
+		position: fixed;
+        left: -90px;
+		top: 0;
+        height:100vh;
+        display: flex;
+		max-width: 300px;
+		transition: 0.2s linear;
+	}
+
+	.sidebar.is-active {
+		left: 0;
+	}
+}

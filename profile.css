@@ -2,131 +2,6 @@ body{
 	font-family: Poppins,sans-serif;
 }
 
-
-/*Side Nav*/
-
-.menu-toggle{
-	display: none;
-	position: fixed;
-	top: 2rem;
-	right: 2rem;
-	width: 60px;
-	height: 60px;
-	border-radius: 99px;
-	background-color: #808af5;
-	cursor: pointer;
-}
-
-.hamburger {
-	position: relative;
-	top: calc(50% - 2px);
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 2rem;
-}
-
-.hamburger > span,
-.hamburger > span::before,
-.hamburger > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 99px;
-  background-color: #FFF;
-  transition-duration: .25s;
-}
-
-.hamburger > span::before {
-  content: '';
-  top: -8px;
-}
-.hamburger > span::after {
-  content: '';
-  top: 8px;
-}
-.menu-toggle.is-active .hamburger > span {
-  transform: rotate(45deg);
-}
-.menu-toggle.is-active .hamburger > span::before {
-  top: 0;
-  transform: rotate(0deg);
-}
-.menu-toggle.is-active .hamburger > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-.sidebar {
-	flex: 1 1 0;
-	max-width: 5rem;
-	padding: 2rem 1rem;
-	background-color: #9797db;
-    height: 100vh;
-    position:fixed;
-    border-radius: 0.5rem;
-    color:#777;
-    font-family: Poppins;
-}
-
-
-.sidebar .menu {
-	margin: 0 -1rem;
-}
-
-.sidebar .menu .menu-item {
-	display: block;
-	padding: 1em;
-	color: #FFF;
-	text-decoration: none;
-	transition: 0.2s linear;
-    border-radius: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.sidebar .menu .menu-item:hover,
-.sidebar .menu .menu-item.is-active {
-	color: #1d2a77;
-	border-right: 5px solid #1d2a77;
-    outline: solid 0.1rem #1d2a77;
-}
-
-.sidebar .menu .menu-item:hover {
-	border-right: 5px solid #1d2a77;
-    color: #1d2a77;
-	border-right: 5px solid #1d2a77;
-    outline: solid 0.1rem #1d2a77;
-}
-@media (max-width: 1024px) {
-	.sidebar {
-		max-width: 200px;
-	}
-}
-
-@media (max-width: 768px) {
-	.menu-toggle {
-		display: block;
-        z-index: 100;
-	}
-	.content {
-		padding-top: 8rem;
-	}
-	.sidebar {
-		position: fixed;
-        left: -90px;
-		top: 0;
-        height:100vh;
-        display: flex;
-		max-width: 300px;
-		transition: 0.2s linear;
-	}
-
-	.sidebar.is-active {
-		left: 0;
-	}
-}
-
-
 #profile-container{
 	margin-left:6rem;
 	position: relative;
@@ -189,4 +64,142 @@ a{
 
 .logout:hover >.logout-btn{
 	stroke: #1d2a77;
+}
+
+/*Side Nav*/
+
+.menu-toggle {
+	display: none;
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+	width: 60px;
+	height: 60px;
+	border-radius: 99px;
+	background-color: #808af5;
+	cursor: pointer;
+}
+
+.hamburger {
+	position: relative;
+	top: calc(50% - 2px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 2rem;
+}
+
+.hamburger > span,
+.hamburger > span::before,
+.hamburger > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 99px;
+  background-color: #FFF;
+  transition-duration: .25s;
+}
+
+.hamburger > span::before {
+  content: '';
+  top: -8px;
+}
+.hamburger > span::after {
+  content: '';
+  top: 8px;
+}
+.menu-toggle.is-active .hamburger > span {
+  transform: rotate(45deg);
+}
+.menu-toggle.is-active .hamburger > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+.menu-toggle.is-active .hamburger > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.sidebar {
+	flex: 1 1 0;
+	max-width: 5rem;
+	padding: 2rem 1rem;
+	background-color: #9797db;
+    height: 100vh;
+    position:fixed;
+    border-radius: 0.5rem;
+    color:#777;
+}
+
+.sidebar h3 {
+	color: #cacbce;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+}
+
+.sidebar .menu {
+	margin: 0 -1rem;
+}
+
+.sidebar .menu .menu-item {
+	display: block;
+	padding: 1em;
+	color: #FFF;
+	text-decoration: none;
+	transition: 0.2s linear;
+    border-radius: 1rem;
+    
+    margin-bottom: 0.5rem;
+}
+
+.sidebar .menu .menu-item:hover,
+.sidebar .menu .menu-item.is-active {
+	color: #1d2a77;
+	border-right: 5px solid #1d2a77;
+    outline: solid 0.1rem #1d2a77;
+}
+
+.sidebar .menu .menu-item:hover {
+	border-right: 5px solid #1d2a77;
+}
+
+@media (max-width: 1024px) {
+	.sidebar {
+		max-width: 200px;
+	}
+}
+
+@media (max-width: 768px) {
+	.menu-toggle {
+		display: block;
+        z-index: 100;
+	}
+	.content {
+		padding-top: 8rem;
+	}
+	.sidebar {
+		position: fixed;
+        left: -90px;
+		top: 0;
+        height:100vh;
+        display: flex;
+		max-width: 300px;
+		transition: 0.2s linear;
+		z-index: 999;
+	}
+
+	.sidebar.is-active {
+		left: 0;
+	}
+    #profile-container{
+        margin-left: 0rem;
+        padding: 0rem;
+    }
+    .cards{
+        max-width: 100vw;
+    }
+    .card{
+        max-width: 100vw;
+    }
 }

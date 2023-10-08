@@ -74,7 +74,7 @@ const firebaseConfig = {
   if (user) {
     let userId = user.uid;
 		return onValue(ref(database, '/users/' + userId), (snapshot) => {
-  const name = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+  const name = (snapshot.val() && snapshot.val().fullname) || 'Anonymous';
   profileName = name;
   profileEmail = (snapshot.val() && snapshot.val().email)
   profileNumber = (snapshot.val() && snapshot.val().number)

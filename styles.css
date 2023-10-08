@@ -4,7 +4,7 @@ body {
 	animation: gradient 20s ease infinite;
     background-size: 300% 400%;
 	height: 100vh;
-    background: url("bg.jpg");
+    background: url("./images/bg.jpg");
     
 }
 :root{

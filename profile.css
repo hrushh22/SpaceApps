@@ -1,3 +1,8 @@
+body{
+	font-family: Poppins,sans-serif;
+}
+
+
 /*Side Nav*/
 
 .menu-toggle{
@@ -91,4 +96,97 @@
     color: #1d2a77;
 	border-right: 5px solid #1d2a77;
     outline: solid 0.1rem #1d2a77;
+}
+@media (max-width: 1024px) {
+	.sidebar {
+		max-width: 200px;
+	}
+}
+
+@media (max-width: 768px) {
+	.menu-toggle {
+		display: block;
+        z-index: 100;
+	}
+	.content {
+		padding-top: 8rem;
+	}
+	.sidebar {
+		position: fixed;
+        left: -90px;
+		top: 0;
+        height:100vh;
+        display: flex;
+		max-width: 300px;
+		transition: 0.2s linear;
+	}
+
+	.sidebar.is-active {
+		left: 0;
+	}
+}
+
+
+#profile-container{
+	margin-left:6rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	border-radius: 1rem;
+	background-color: #e6e6e6;
+	width: 100vw;
+	padding: 1rem;
+}
+#profile-container p{
+	display: flex;
+	gap: 0.5rem;
+	
+}
+
+#profile-container h2{
+	background-color: #82828f;
+	padding: 0.5rem;
+	color: #FFF;
+	font-weight: 700;
+	border-radius: 0.5rem;
+	width: fit-content;
+}
+#profile-container strong{
+	color:#82828f;
+	font-size: 1.2rem;
+}
+
+#profile-container span{
+	font-size: 1.2rem;
+}
+a{
+	text-decoration: none;
+}
+.logout{
+	display: flex;
+	color: #82828f;
+	line-height: 1;
+	font-size: 1.2rem;
+	align-items: center;
+	border-radius: 0.5rem;
+	background-color: #FFF;
+	width: fit-content;
+	padding:0rem 1rem;
+	transition: 0.3s ease all;
+	gap:0.5rem;
+}
+.logout-btn{
+	height:1.8rem;
+	width:1.8rem;
+	stroke:#82828f;
+}
+
+.logout:hover{
+	background-color: #808af5;
+	color:#1d2a77;
+	transition: 0.3s ease all;
+}
+
+.logout:hover >.logout-btn{
+	stroke: #1d2a77;
 }

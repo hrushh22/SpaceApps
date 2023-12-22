@@ -1,4 +1,8 @@
 ## SciNexus 🚀
+SciNexus is a platform that facilitates collaboration between open-source project creators and contributors by efficiently matching individuals with the necessary skills to projects in need.
+
+## Project Link
+Visit the [SciNexus website](https://www.scinexus.co) to explore the platform.
 
 ### Overview 📃
 - The landscape of open science and open-source projects is vast, but often, there is a lack of efficient ways to connect project creators with skilled collaborators. SciNexus addresses this challenge by providing a platform where individuals looking for open-source projects and project creators can find each other and collaborate effectively.
